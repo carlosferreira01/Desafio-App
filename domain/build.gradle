@@ -1,0 +1,26 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    implementation dependencies.rxjava
+    implementation dependencies.rxandroid
+    implementation dependencies.koin
+    implementation dependencies.retrofit
+    implementation dependencies.anko
+    implementation dependencies.google_gson
+    implementation dependencies.koin
+    implementation dependencies.koin_android
+    implementation dependencies.koin_androidx
+    testImplementation dependencies.junit
+    implementation dependencies.assertJ
+    testImplementation dependencies.mockito
+    testImplementation dependencies.mockito_kotlin
+    testImplementation dependencies.mockito_inline
+}
