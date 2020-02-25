@@ -57,7 +57,7 @@ class MovieDetailPresenter (
         )
     }
 
-    override fun setDepartmentID(movieId: String) {
+    override fun setMovieId(movieId: String) {
         mMovieId = movieId
     }
 

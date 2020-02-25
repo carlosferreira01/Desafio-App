@@ -24,7 +24,7 @@ interface MovieDetailContract {
     interface Presenter{
 
 
-        fun setDepartmentID(movieId: String)
+        fun setMovieId(movieId: String)
         fun destroy()
         fun getMovieDetail()
         fun setDataMovieDetail(movie: MovieDetail)

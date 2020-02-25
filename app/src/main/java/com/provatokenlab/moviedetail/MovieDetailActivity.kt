@@ -31,7 +31,7 @@ class MovieDetailActivity: BaseActivity(), MovieDetailContract.View{
 
 
         getExtras(intent.extras)
-        mPresenter.setDepartmentID(mMovie!!.id)
+        mPresenter.setMovieId(mMovie!!.id)
         createToolbar(toolbar, true)
 
         mPresenter.getMovieDetail()

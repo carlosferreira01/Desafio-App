@@ -10,8 +10,7 @@ import kotlin.math.roundToInt
 
 
 object LoadImages {
-    private val DEFAULT_IMG_RESOLUTION_PRODUCT = "104x78"
-    private val IMG_BASE_URL = "https://a-static.mlcdn.com.br/"
+
 
     private fun getDisplayImageOptions(): DisplayImageOptions? {
         return DisplayImageOptions.Builder()
@@ -38,24 +37,5 @@ object LoadImages {
         }
     }
 
-    fun getIdealImgResolution(context: Context, idealWidth: Int, idealHeight: Int): String {
-        return dpToPx(idealWidth, context).toString() + "x" + dpToPx(idealHeight, context).toString()
-    }
-
-    private fun dpToPx(dp: Int, context: Context): Int {
-        val density = context.resources
-            .displayMetrics
-            .density
-        return (dp.toFloat() * density).roundToInt()
-    }
-
-    fun setIdealResolutionInImgURL(imgURL: String?, idealImgResolution: String): String? {
-        var imgURL: String? = imgURL ?: return null
-        if (imgURL!!.contains(IMG_BASE_URL)) {
-            val image = imgURL.replace(DEFAULT_IMG_RESOLUTION_PRODUCT, idealImgResolution)
-            imgURL = image.replace("{w}x{h}", idealImgResolution)
-        }
-        return imgURL
-    }
 
 }
