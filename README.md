@@ -1,7 +1,7 @@
 # Desafio - App - Cinema Max
 
 
-**Cinema Max** é o projeto Android desenvolvido para o desafio da empresa TokenLab.
+**Cinema Max** é um projeto Android desenvolvido para o desafio da empresa TokenLab.
 
 ## Task
 O pessoal da Tokenlab gosta muito de filmes e decidiu construir uma API REST que disponibiliza informações sobre 20 filmes que estão entre os mais bem avaliados pelos usuários do TMDB .
@@ -21,9 +21,9 @@ Requisitos:
 
 - Clone esse repositório e importe no Android Studio
 
-- Instale os complementos para o SDK via SDK Manager : confira os arquivos **build.gradle** para as versões corretas de Build Tools, SDK Tools, Google Play Services, Support Libraries e outros
+- Confira o arquivo **dependencies.gradle** para as versões corretas do projeto.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE] (LICENSE) para obter detalhes.
 
