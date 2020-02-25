@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class MovieEntity (
-    val id: Int,
+    val id: String,
     val title: String,
     @SerializedName("poster_url")val image: String?,
     val genres: List<String>,

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/layout_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mPosterMovie"
+        android:layout_width="@dimen/movie_layout_image_width"
+        android:layout_height="@dimen/movie_layout_image_height"
+        android:layout_gravity="left"
+        android:layout_margin="@dimen/movie_layout_image_margin"
+        app:layout_constraintStart_toStartOf="@+id/viewSeparate"
+        app:layout_constraintTop_toBottomOf="@+id/layout_header"
+        tools:srcCompat="@drawable/ic_image" />
+
+    <TextView
+        android:id="@+id/mTextNameMovie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movie_layout_text_title_margin_start"
+        android:layout_marginTop="@dimen/movie_layout_text_title_margin_top"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_gray_dark"
+        android:textSize="@dimen/size_font_name_movie"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewSeparate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mPosterMovie"
+        app:layout_constraintTop_toBottomOf="@+id/layout_header"
+        tools:text="Dilwale Dulhania Le Jayenge" />
+
+    <TextView
+        android:id="@+id/mTextReleaseMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/movie_layout_text_release_margin_top"
+        android:textSize="@dimen/size_text_default"
+        app:layout_constraintStart_toStartOf="@+id/mTextNameMovie"
+        app:layout_constraintTop_toBottomOf="@+id/mTextNameMovie"
+        tools:text="Release: 1994" />
+
+    <TextView
+        android:id="@+id/mTextRuntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/movie_layout_text_default_margin_top"
+        android:textSize="@dimen/size_text_default"
+        app:layout_constraintStart_toStartOf="@+id/mTextReleaseMovie"
+        app:layout_constraintTop_toBottomOf="@+id/mTextReleaseMovie"
+        tools:text="190 minutes" />
+    <TextView
+        android:id="@+id/mTextVoteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/movie_layout_text_default_margin_top"
+        android:textSize="@dimen/size_text_default"
+        app:layout_constraintStart_toStartOf="@+id/mTextRuntime"
+        app:layout_constraintTop_toBottomOf="@+id/mTextRuntime"
+        tools:text="1863 votes" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutAverage"
+        android:layout_width="@dimen/movie_layout_average_width"
+        android:layout_height="@dimen/movie_layout_average_height"
+        android:layout_marginStart="@dimen/movie_layout_average_margin_start"
+        android:background="@drawable/btn_shape_rounded_green"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutGenre"
+        app:layout_constraintStart_toEndOf="@+id/layoutGenre"
+        app:layout_constraintTop_toTopOf="@+id/layoutGenre">
+
+        <TextView
+            android:id="@+id/mTextAverageMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_text_average"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:text="8.6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutGenre"
+        android:layout_width="@dimen/movie_layout_genre_width"
+        android:layout_height="@dimen/movie_layout_genre_height"
+        android:layout_marginBottom="@dimen/movie_layout_genre_margin_bottom"
+        android:background="@drawable/btn_shape_rounded_teste"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/viewSeparate"
+        app:layout_constraintStart_toStartOf="@+id/mTextVoteCount">
+
+        <TextView
+            android:id="@+id/mTextGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_text_genre"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:text="Animation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/viewSeparate"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/movie_layout_view_separate_height"
+        android:layout_marginStart="@dimen/movie_layout_view_separate_margin_start_end"
+        android:layout_marginEnd="@dimen/movie_layout_view_separate_margin_start_end"
+        android:layout_marginTop="@dimen/movie_layout_view_separate_margin_top"
+        android:background="@drawable/back_shadow_view"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mPosterMovie" />
+
+    <TextView
+        android:id="@+id/mTextOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movie_layout_text_overview_margin_start_end"
+        android:layout_marginEnd="@dimen/movie_layout_text_overview_margin_start_end"
+        android:layout_marginTop="@dimen/movie_layout_text_overview_margin_top"
+        android:textSize="@dimen/size_text_overview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparate"
+        tools:text="Raj is a rich, carefree, happy-go-lucky second generation NRI.
+        Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI
+        is very strict about adherence to Indian values. Simran has left for India to be
+        married to her childhood fiancé. Raj leaves for India with a mission at his hands, to
+        claim his lady love under the noses of her whole family. Thus begins a saga." />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mContentMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_header">
+
+        <ImageView
+            android:id="@+id/ivNotFound"
+            android:layout_width="@dimen/image_view_not_found_size_width"
+            android:layout_height="@dimen/image_view_not_found_size_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_error" />
+
+        <TextView
+            android:id="@+id/mTvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/message_not_found_margin_left_right"
+            android:layout_marginTop="@dimen/message_user_margin_top"
+            android:layout_marginRight="@dimen/message_not_found_margin_left_right"
+            android:gravity="center"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/size_font_message_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivNotFound" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbarTheme" format="reference" />
+    <attr name="color_message" format="reference" />
+    <attr name="color_message_light" format="reference" />
+    <attr name="color_message_dark" format="reference" />
+</resources>

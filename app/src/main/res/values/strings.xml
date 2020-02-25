@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cinema Max</string>
+    <string name="version_name">Versão %s</string>
+
+
+    <!-- Fail -->
+    <string name="activity_fail_error_occurred">%1s \n\nErro ocorrido:\n %2s</string>
+    <string name="activity_fail_error_msg">Aconteceu um erro inesperado,\npor favor tente novamente mais tarde.</string>
+    <string name="activity_fail_button_restart_app">REINICIAR  APP</string>
+
+    <!--  -->
+    <string name="message_error_user_caused_exception">Ocorreu um erro ao buscar as informações.</string>
+    <string name="message_user_not_content">Nenhum item disponível no momento!</string>
+
+    <!-- Movie -->
+    <string name="activity_movie_detail_label">Detalhes </string>
+    <string name="text_release_concatenate">Release: %s</string>
+    <string name="text_vote_count_concatenate">%s votes</string>
+    <string name="text_runtime_concatenate">%s minutes</string>
+</resources>

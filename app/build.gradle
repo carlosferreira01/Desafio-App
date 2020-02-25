@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.provatokenlab"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":domain")
+    implementation project(":data")
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation("com.crashlytics.sdk.android:crashlytics:$crashlytics_version") {
+        transitive = true
+    }
+    implementation dependencies.lottie
+    implementation dependencies.kotlin
+    implementation dependencies.androidx_appcompat
+    implementation dependencies.androidx_core
+    implementation dependencies.androidx_constraint_layout
+    implementation dependencies.google_material
+    implementation dependencies.anko
+    implementation dependencies.smoothprogressbar
+    implementation dependencies.flexbox
+    implementation dependencies.retrofit
+    implementation dependencies.rxbinding
+    implementation dependencies.multidex
+    implementation dependencies.analytics
+    implementation dependencies.firebase_core
+    implementation dependencies.rxjava
+    implementation dependencies.rxandroid
+    testImplementation dependencies.junit
+    implementation dependencies.assertJ
+    testImplementation dependencies.mockito
+    testImplementation dependencies.mockito_kotlin
+    testImplementation dependencies.mockito_inline
+    implementation dependencies.volley
+    implementation dependencies.image_loader
+    implementation dependencies.koin
+    implementation dependencies.koin_android
+    implementation dependencies.koin_androidx
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+}
+

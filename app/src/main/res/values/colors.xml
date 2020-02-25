@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff253a</color>
+    <color name="colorPrimaryDark">#cc0000</color>
+    <color name="colorAccent">#ff8080</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray">#757575</color>
+    <color name="color_gray_light">#c1c1c1</color>
+    <color name="color_gray_dark">#2A2A2A</color>
+    <color name="color_background_view">#FAFAFA</color>
+
+    <!-- PROGRESSBAR COLOR -->
+    <color name="color_bar_orange_dark">#ff8a00</color>
+    <color name="color_bar_red_light">#ff5f5f</color>
+    <color name="color_bar_red_dark">#ff253a</color>
+    <color name="color_bar_pink_dark">#ff37a8</color>
+    <color name="color_bar_pink_light">#ff7ae7</color>
+    <color name="color_bar_purple_light">#c739ff</color>
+    <color name="color_bar_purple_dark">#a400e1</color>
+
+
+    <!-- ARRAY FOR PROGRESSBAR COLOR -->
+    <integer-array name="colors">
+        <item>@color/color_bar_orange_dark</item>
+        <item>@color/color_bar_red_light</item>
+        <item>@color/color_bar_red_dark</item>
+        <item>@color/color_bar_pink_dark</item>
+        <item>@color/color_bar_pink_light</item>
+        <item>@color/color_bar_purple_light</item>
+        <item>@color/color_bar_purple_dark</item>
+    </integer-array>
+
+    <color name="background_splashScreen_default">#ff253a</color>
+
+    <color name="color_ic_search_gray">#9B9B9B</color>
+
+    <color name="color_text_gray">#515151</color>
+
+    <color name="color_separate_list">#e5e5e5</color>
+
+    <color name="color_bar_green">#3fcb2a</color>
+
+
+</resources>

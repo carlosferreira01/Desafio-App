@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Commons -->
+    <dimen name="layout_progressbar_height_size">3.5dp</dimen>
+    <dimen name="progressbar_height">3.5dp</dimen>
+
+    <!-- Splash Screen -->
+    <dimen name="splash_screen_image_view_bottom_size_height">90dp</dimen>
+    <dimen name="splash_screen_image_view_logo_size_width_height">200dp</dimen>
+    <dimen name="splash_screen_image_view_logo_margin_top">12dp</dimen>
+
+    <!-- Fail Activity -->
+    <dimen name="activity_fail_image_view_fail_width_height">180dp</dimen>
+    <dimen name="activity_fail_image_view_fail_margin_top">16dp</dimen>
+    <dimen name="activity_fail_scroll_view_margin_bottom">8dp</dimen>
+    <dimen name="activity_fail_text_view_error_spacing">4sp</dimen>
+    <dimen name="activity_fail_text_view_error_padding">16dp</dimen>
+    <dimen name="activity_fail_text_view_error_size">16sp</dimen>
+    <dimen name="activity_fail_button_restart_app_size">16sp</dimen>
+    <dimen name="activity_fail_button_restart_app_padding">8dp</dimen>
+    <dimen name="activity_fail_container_button_margin">10dp</dimen>
+    <dimen name="activity_fail_layout_margin_bottom">10dp</dimen>
+
+    <!-- Content Message-->
+    <dimen name="message_not_found_margin_left_right">10dp</dimen>
+    <dimen name="size_font_message_user">15sp</dimen>
+    <dimen name="message_user_margin_top">5dp</dimen>
+    <dimen name="image_view_not_found_size_width">130dp</dimen>
+    <dimen name="image_view_not_found_size_height">80dp</dimen>
+
+    <!-- Home - Adapter -->
+    <dimen name="layout_item_banner_card_margin">8dp</dimen>
+    <dimen name="layout_item_banner_card_corner_radius">8dp</dimen>
+    <dimen name="layout_item_banner_default_margin">8dp</dimen>
+    <dimen name="layout_item_banner_networkimage_height">120dp</dimen>
+    <dimen name="layout_item_banner_networkimage_width">330dp</dimen>
+    <dimen name="home_layout_image_margin">8dp</dimen>
+    <dimen name="home_layout_image_margin_bottom_top">4dp</dimen>
+    <dimen name="home_layout_image_width">112dp</dimen>
+    <dimen name="home_name_margin_start_end">8dp</dimen>
+    <dimen name="home_name_margin_top">8dp</dimen>
+    <dimen name="home_layout_text_icons_margin_top">4dp</dimen>
+    <dimen name="home_layout_average_width">50dp</dimen>
+    <dimen name="home_layout_average_height">30dp</dimen>
+    <dimen name="home_layout_average_margin_bottom">8dp</dimen>
+    <dimen name="size_font_name_movie">24sp</dimen>
+    <dimen name="size_font_icons_movie">16sp</dimen>
+    <dimen name="size_font_average">20sp</dimen>
+
+    <!-- Home -->
+    <dimen name="home_layout_recycler_margin_top">4dp</dimen>
+
+    <!-- Movie Detail -->
+    <dimen name="movie_layout_image_margin">8dp</dimen>
+    <dimen name="movie_layout_image_width">110dp</dimen>
+    <dimen name="movie_layout_image_height">170dp</dimen>
+    <dimen name="movie_layout_text_title_margin_start">6dp</dimen>
+    <dimen name="movie_layout_text_title_margin_top">8dp</dimen>
+    <dimen name="movie_layout_text_release_margin_top">2dp</dimen>
+    <dimen name="movie_layout_text_default_margin_top">4dp</dimen>
+    <dimen name="movie_layout_average_width">50dp</dimen>
+    <dimen name="movie_layout_average_height">35dp</dimen>
+    <dimen name="movie_layout_average_margin_start">20dp</dimen>
+    <dimen name="movie_layout_genre_width">120dp</dimen>
+    <dimen name="movie_layout_genre_height">35dp</dimen>
+    <dimen name="movie_layout_genre_margin_bottom">8dp</dimen>
+    <dimen name="movie_layout_view_separate_height">2dp</dimen>
+    <dimen name="movie_layout_view_separate_margin_start_end">16dp</dimen>
+    <dimen name="movie_layout_view_separate_margin_top">8dp</dimen>
+    <dimen name="movie_layout_text_overview_margin_start_end">20dp</dimen>
+    <dimen name="movie_layout_text_overview_margin_top">16dp</dimen>
+    <dimen name="size_text_default">16sp</dimen>
+    <dimen name="size_text_average">20sp</dimen>
+    <dimen name="size_text_genre">20sp</dimen>
+    <dimen name="size_text_overview">18sp</dimen>
+
+</resources>

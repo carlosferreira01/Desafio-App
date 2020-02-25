@@ -2,11 +2,7 @@ package com.data.moviedetail.mapper.extensions
 
 import com.data.moviedetail.entity.MovieDetailEntity
 import com.domain.moviedetail.model.MovieDetail
-
-fun List<MovieDetailEntity>.toMovieDetail(): List<MovieDetail> =
-    map {
-        it.toMovieDetail() }
-
+import io.reactivex.Single
 
 fun MovieDetailEntity.toMovieDetail() = MovieDetail(
     id = id,
@@ -16,6 +12,7 @@ fun MovieDetailEntity.toMovieDetail() = MovieDetail(
     overview = overview,
     vote_average = vote_average,
     vote_count = vote_count,
-    genres = genres
-
+    genres = genres,
+    runtime = runtime,
+    release = release
 )

@@ -5,5 +5,7 @@ import io.reactivex.Single
 
 
 interface MovieDataSource {
-    fun getMovies(): Single<List<MovieEntity>>
+
+        fun getMovies(): Single<List<MovieEntity>>
+
 }

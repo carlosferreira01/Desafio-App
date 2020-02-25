@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mCardViewBanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/layout_item_banner_card_margin"
+    android:layout_marginEnd="@dimen/layout_item_banner_card_margin"
+    android:layout_marginBottom="@dimen/layout_item_banner_default_margin"
+    android:foreground="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardCornerRadius="@dimen/layout_item_banner_card_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mConstraintLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="154dp">
+
+        <ImageView
+            android:id="@+id/mImageMovie"
+            android:layout_width="@dimen/home_layout_image_width"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/home_layout_image_margin"
+            android:layout_marginStart="@dimen/home_layout_image_margin"
+            android:layout_marginTop="@dimen/home_layout_image_margin_bottom_top"
+            android:layout_marginBottom="@dimen/home_layout_image_margin_bottom_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_image" />
+
+        <TextView
+            android:id="@+id/mTextNameMovie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_name_margin_start_end"
+            android:layout_marginEnd="@dimen/home_name_margin_start_end"
+            android:layout_marginTop="@dimen/home_name_margin_top"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/color_gray_dark"
+            android:textSize="@dimen/size_font_name_movie"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mImageMovie"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dilwale Dulhania Le Jayenge" />
+
+        <TextView
+            android:id="@+id/mTextGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_layout_text_icons_margin_top"
+            android:textSize="@dimen/size_font_icons_movie"
+            app:layout_constraintStart_toStartOf="@+id/mTextNameMovie"
+            app:layout_constraintTop_toBottomOf="@+id/mTextNameMovie"
+            tools:text="Comedy" />
+
+        <TextView
+            android:id="@+id/mTextRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_layout_text_icons_margin_top"
+            android:textSize="@dimen/size_font_icons_movie"
+            app:layout_constraintStart_toStartOf="@+id/mTextGenres"
+            app:layout_constraintTop_toBottomOf="@+id/mTextGenres"
+            tools:text="Release: 1994" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutAverage"
+            android:layout_width="@dimen/home_layout_average_width"
+            android:layout_height="@dimen/home_layout_average_height"
+            android:layout_marginBottom="@dimen/home_layout_average_margin_bottom"
+            android:background="@drawable/btn_shape_rounded_green"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/mTextRelease">
+
+            <TextView
+                android:id="@+id/mTextAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_average"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4"
+                tools:text="8.6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

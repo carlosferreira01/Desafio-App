@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutFail"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivFail"
+        android:layout_width="@dimen/activity_fail_image_view_fail_width_height"
+        android:layout_height="@dimen/activity_fail_image_view_fail_width_height"
+        android:layout_marginTop="@dimen/activity_fail_image_view_fail_margin_top"
+        app:srcCompat="@drawable/ic_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:layout_marginBottom="@dimen/activity_fail_scroll_view_margin_bottom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/ivFail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/mTvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_fail_text_view_error_size"
+            android:lineSpacingExtra="@dimen/activity_fail_text_view_error_spacing"
+            android:padding="@dimen/activity_fail_text_view_error_padding"
+            android:text="@string/activity_fail_error_msg"
+            android:textColor="@color/color_gray"
+            android:gravity="center" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
