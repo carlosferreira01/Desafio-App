@@ -25,5 +25,5 @@ Requisitos:
 
 ## License
 
-Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE] para obter detalhes.
+Este projeto está licenciado sob a licença MIT - Veja o [LICENSE](https://github.com/carlosferreira01/Desafio-App/blob/master/LICENSE) para obter detalhes.
 
